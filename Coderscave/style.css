@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 110%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    color: #394c4a;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.header-background {
+    background: linear-gradient(rgba(255, 254, 253, 0.7), rgba(255, 254, 253, 0.9)), 
+                url("front-end-developer.jpg") center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav {    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);;
+    }
+    nav ul{
+    display: flex;
+    justify-content: center;
+    }
+    nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    }/*
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+*/
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Unica One', cursive;
+    font-size: 1.2rem;
+}
+
+.header-content img {
+    max-width: 250px;
+    border-radius: 50%;
+    border: 5px solid red; /* Adjust the width and color of the border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds shadow effect */
+}
+
+
+.header-content h1, .header-content p {
+    margin: 0.5rem 0;
+    font-family: 'Unica One', cursive;
+
+}
+
+#about {
+    background-color: #ffffff; 
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 40px;
+    border-radius: 0.5%;
+    text-align: center;
+}
+
+.profile-photo {
+
+    max-width: 40%;
+    height: auto; 
+    border-radius: 50%; 
+}
+
+#portfolio {
+    border-radius: 8px;
+    background-color: #0fbfbf; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.names{
+    display:flex; 
+   
+    justify-content: space-around;
+}
+
+.project {
+    justify-content: space-evenly;
+   
+    background-size: cover;
+    text-decoration: none;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin:10px 39px 0px;
+    display: inline-flex;
+    line-height: 200px;
+}
+#project2{
+    border-radius: 15%;
+    border: 5px solid rgb(16, 231, 235); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+}
+#project1{
+    border-radius: 15%;
+    border: 5px solid rgb(16, 231, 235); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+}
+#project3{
+    border-radius: 15%;
+    border: 5px solid rgb(16, 231, 235); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+}
+#project4{
+    border-radius: 15%;
+    border: 5px solid rgb(16, 231, 235); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+}
+#contact {
+    background-color: #ffffff; 
+    padding: 50px 20px; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    margin: 20px; 
+}
+
+
+#contact h2 {
+    color: #333; 
+    font-size: 24px;
+}
+
+/* Button styling */
+.btn {
+    font-size: 18px; 
+    padding: 10px 30px; 
+    background-color: #0056b3; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #003580; 
+}
+
+/* Outline style button */
+.td-btn.outline.white {
+    background-color: transparent;
+    color: #0056b3;
+    border: 2px solid #0056b3; 
+}
+
+.td-btn.outline.white:hover {
+    background-color: #0056b3; 
+    color: white; 
+}
+
+
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background-color: #333;
+    color: white; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; 
+}
+
+/* Additional Styles */
+h2 {
+    color: #333;
+    font-family: 'Unica One', cursive;
+    font-size: 2.3rem;
+}
+
+a {
+    color: #29a598;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #208479;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  
+  .profile-photo {
+        width: 50%; 
+        margin: 0 auto; 
+    }
+}
